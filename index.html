@@ -1895,7 +1895,9 @@
     { date: '27 مايو 2026', label: 'نثريات — تركيب أرفف', note: 'تركيب أرفف · MOSTAFA E***D I***M H***D', status: 'مدفوع', amount: 20, paid: 20, remaining: 0, isDeposit: false, receipt: 'wamd-misc-20' },
     { date: '27 مايو 2026', label: 'نثريات — منظفات ACE Hardware', note: 'منظفات أفران وأرضيات وأسطح معدنية · ACE Hardware', status: 'مدفوع', amount: 9, paid: 9, remaining: 0, isDeposit: false },
     { date: '31 مايو 2026', label: 'حمام خارجي', note: 'شراء وتركيب حمام خارجي · AWAL K***N H A***D', status: 'مدفوع', amount: 110, paid: 110, remaining: 0, isDeposit: false, receipt: 'wamd-bathroom-110' },
-    { date: '31 مايو 2026', label: 'طلاء الأرضية الخارجية (إيبوكسي)', note: 'مقدم · Al-Tijari InstaPay · إجمالي 150 د.ك', status: 'جزئي', amount: 150, paid: 100, remaining: 50, isDeposit: false, receipt: 'tijari-epoxy-100' },
+    { date: '31 مايو 2026', label: 'طلاء الأرضية الخارجية (إيبوكسي)', note: 'Al-Tijari InstaPay · إجمالي 150 د.ك', status: 'مدفوع', amount: 150, paid: 150, remaining: 0, isDeposit: false, receipt: 'tijari-epoxy-100', receipt2: 'wamd-epoxy-50' },
+    { date: '01 يونيو 2026', label: 'نثريات — كاشف دخان', note: 'شركة القياس · SINV-159119 · حولي', status: 'مدفوع', amount: 3.500, paid: 3.500, remaining: 0, isDeposit: false, receipt: 'qiyas-smoke-3' },
+    { date: '01 يونيو 2026', label: 'نقل المعدات والأفران', note: 'نقل معدات وأفران المحل · MOHAMED A***N I***M N***M', status: 'مدفوع', amount: 240, paid: 240, remaining: 0, isDeposit: false, receipt: 'wamd-move-240' },
     { date: 'مايو 2026',    label: 'رخام مدخل + أغراض سيراميك', note: 'تركيب رخام المدخل وأغراض استكمال السيراميك · مقاول محمود', status: 'مدفوع', amount: 88, paid: 88, remaining: 0, isDeposit: false, receipt: 'wamd-88' },
   ];
 
@@ -2679,6 +2681,67 @@
     </div>
     <div style="text-align:center;font-size:2rem;font-weight:900;color:#1a2a6c;">100.000 <span style="font-size:1rem;color:#7a8ab0;">KWD</span></div>
     <div style="text-align:center;margin-top:10px;font-size:0.82rem;color:#f39c12;font-weight:700;">⏳ مقدم — باقي 50 د.ك · الإجمالي 150 د.ك</div>
+  </div>
+</div>
+
+
+<!-- وصل WAMD 50 د.ك — آخر دفعة الإيبوكسي -->
+<div class="modal-overlay" id="modal-wamd-epoxy-50" onclick="if(event.target===this)closeModal('wamd-epoxy-50')">
+  <div class="modal-box" style="max-width:360px;text-align:center;direction:ltr;">
+    <button class="modal-close" onclick="closeModal('wamd-epoxy-50')">✕</button>
+    <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:18px;">
+      <div style="width:36px;height:36px;background:#f5c800;border-radius:6px;"></div>
+      <div style="width:24px;height:36px;background:#2563eb;border-radius:6px;transform:skewX(-8deg);"></div>
+      <span style="font-size:1.4rem;font-weight:900;color:#111;letter-spacing:1px;">WAMD</span>
+    </div>
+    <div style="font-size:0.72rem;color:#7a8ab0;margin-bottom:16px;">Powered by KNET</div>
+    <div style="font-size:1rem;font-weight:700;color:#111;margin-bottom:6px;">تمت العملية بنجاح</div>
+    <div style="font-size:0.85rem;color:#7a8ab0;margin-bottom:10px;">تم الدفع إلى</div>
+    <div style="font-size:0.88rem;font-weight:700;color:#1a2a6c;letter-spacing:1px;margin-bottom:16px;">MINA S***R L***B A***D</div>
+    <div style="font-size:2.2rem;font-weight:900;color:#111;margin-bottom:4px;">50.000<span style="font-size:1.1rem;font-weight:600;color:#7a8ab0;margin-right:4px;">KWD</span></div>
+    <div style="background:#f0fff4;border-radius:8px;padding:10px 14px;font-size:0.82rem;color:#1e5c38;margin-top:16px;direction:rtl;font-weight:600;">✅ آخر دفعة — طلاء الأرضية الخارجية إيبوكسي · المجموع 150 د.ك</div>
+  </div>
+</div>
+
+<!-- فاتورة شركة القياس — كاشف دخان 3.500 د.ك -->
+<div class="modal-overlay" id="modal-qiyas-smoke-3" onclick="if(event.target===this)closeModal('qiyas-smoke-3')">
+  <div class="modal-box" style="max-width:400px;direction:rtl;">
+    <button class="modal-close" onclick="closeModal('qiyas-smoke-3')">✕</button>
+    <div style="text-align:center;margin-bottom:16px;padding-bottom:14px;border-bottom:2px solid #1a2a6c;">
+      <div style="font-size:1.1rem;font-weight:900;color:#1a2a6c;">شركة القياس</div>
+      <div style="font-size:0.75rem;color:#7a8ab0;margin-top:3px;">Measurement Company · حولي</div>
+    </div>
+    <div style="background:#f0fff4;border-radius:10px;padding:12px 16px;margin-bottom:14px;font-size:0.85rem;">
+      <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+        <span style="color:#7a8ab0;">رقم الفاتورة</span><strong style="color:#1a2a6c;">SINV-159119</strong>
+      </div>
+      <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+        <span style="color:#7a8ab0;">التاريخ</span><strong style="color:#1a2a6c;">01/06/2026</strong>
+      </div>
+      <div style="display:flex;justify-content:space-between;">
+        <span style="color:#7a8ab0;">المادة</span><strong style="color:#1a2a6c;">Smoke Detector · SD5YSM-04</strong>
+      </div>
+    </div>
+    <div style="text-align:center;font-size:2rem;font-weight:900;color:#1a2a6c;">3.500 <span style="font-size:1rem;color:#7a8ab0;">KWD</span></div>
+  </div>
+</div>
+
+
+<!-- وصل WAMD 240 د.ك — نقل المعدات والأفران -->
+<div class="modal-overlay" id="modal-wamd-move-240" onclick="if(event.target===this)closeModal('wamd-move-240')">
+  <div class="modal-box" style="max-width:360px;text-align:center;direction:ltr;">
+    <button class="modal-close" onclick="closeModal('wamd-move-240')">✕</button>
+    <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:18px;">
+      <div style="width:36px;height:36px;background:#f5c800;border-radius:6px;"></div>
+      <div style="width:24px;height:36px;background:#2563eb;border-radius:6px;transform:skewX(-8deg);"></div>
+      <span style="font-size:1.4rem;font-weight:900;color:#111;letter-spacing:1px;">WAMD</span>
+    </div>
+    <div style="font-size:0.72rem;color:#7a8ab0;margin-bottom:16px;">Powered by KNET</div>
+    <div style="font-size:1rem;font-weight:700;color:#111;margin-bottom:6px;">تمت العملية بنجاح</div>
+    <div style="font-size:0.85rem;color:#7a8ab0;margin-bottom:10px;">تم الدفع إلى</div>
+    <div style="font-size:0.88rem;font-weight:700;color:#1a2a6c;letter-spacing:1px;margin-bottom:16px;">MOHAMED A***N I***M N***M</div>
+    <div style="font-size:2.2rem;font-weight:900;color:#111;margin-bottom:4px;">240.000<span style="font-size:1.1rem;font-weight:600;color:#7a8ab0;margin-right:4px;">KWD</span></div>
+    <div style="background:#f0fff4;border-radius:8px;padding:10px 14px;font-size:0.82rem;color:#1e5c38;margin-top:16px;direction:rtl;font-weight:600;">✅ نقل المعدات والأفران</div>
   </div>
 </div>
 
