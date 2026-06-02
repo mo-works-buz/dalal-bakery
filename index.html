@@ -2199,11 +2199,18 @@
     const container = document.getElementById('licenses-list');
     if (lics.length === 0) {
       container.innerHTML = `
-        <div style="background:#fff;border-radius:14px;padding:40px;text-align:center;box-shadow:var(--card-shadow);">
-          <div style="font-size:2.5rem;margin-bottom:10px;">📋</div>
-          <div style="font-size:1rem;font-weight:600;color:#7a8ab0;margin-bottom:6px;">لا توجد تراخيص مضافة بعد</div>
-          <div style="font-size:0.85rem;color:#a0aec0;">بعد اكتمال النقل، أضف جميع التراخيص والإقامات لمتابعة تواريخ انتهائها</div>
-        </div>`;
+      <div class="license-card">
+        <div class="lic-bar lic-ok"></div>
+        <div style="flex:1;">
+          <div style="font-size:1rem;font-weight:700;color:var(--navy-dark);margin-bottom:4px;">رخصة السالمية — مركز الكويت للأعمال</div>
+          <div style="font-size:0.82rem;color:#7a8ab0;line-height:1.9;">
+            تاريخ الإصدار: 24/05/2026<br>
+            رسوم الإصدار: 60.000 د.ك
+          </div>
+          <button class="attach-btn" onclick="openModal('license-60')" style="margin-top:8px;">📋 عرض الرخصة</button>
+        </div>
+        <span class="days-badge db-ok">✅ سارية</span>
+      </div>`;
       return;
     }
     const sorted = [...lics].sort((a,b) => {
