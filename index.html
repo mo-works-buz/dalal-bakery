@@ -1613,7 +1613,40 @@
     <div style="display:flex;justify-content:space-between;font-size:0.78rem;margin-bottom:14px;">
       <span style="color:#555;">Transaction ID</span><span style="font-weight:600;font-size:0.72rem;">613888004290697</span>
     </div>
-    <div style="background:#fff8e1;border-radius:8px;padding:8px 14px;font-size:0.82rem;color:#7d5a00;direction:rtl;font-weight:600;">⏳ مقدم الكاونتر — باقي 150 د.ك عند التسليم</div>
+    <div style="background:#f0fff4;border-radius:8px;padding:8px 14px;font-size:0.82rem;color:#1e5c38;direction:rtl;font-weight:600;">✅ دفعة أولى — 100 د.ك من إجمالي 340 د.ك</div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-viola-280" onclick="if(event.target===this)closeModal('viola-280')">
+  <div class="modal-box" style="max-width:340px;text-align:center;direction:ltr;font-family:Arial,sans-serif;">
+    <button class="modal-close" onclick="closeModal('viola-280')">✕</button>
+    <div style="background:#217346;border-radius:10px 10px 0 0;padding:14px 20px;margin:-18px -18px 16px -18px;">
+      <div style="color:white;font-size:1rem;font-weight:900;letter-spacing:1px;">VIOLA ALKUWAITIA COMPANY</div>
+      <div style="color:rgba(255,255,255,0.75);font-size:0.7rem;margin-top:2px;">Quick Payment — KNET</div>
+    </div>
+    <div style="display:inline-block;background:#f0fff4;border:1.5px solid #217346;border-radius:20px;padding:4px 16px;font-size:0.78rem;font-weight:700;color:#217346;margin-bottom:14px;">✔ Payment Successful</div>
+    <div style="display:flex;justify-content:space-between;font-size:0.78rem;border-bottom:1px solid #f0f0f0;padding-bottom:6px;margin-bottom:6px;">
+      <span style="color:#555;">Amount</span><span style="font-weight:800;color:#111;">KWD 280.000</span>
+    </div>
+    <div style="display:flex;justify-content:space-between;font-size:0.78rem;border-bottom:1px solid #f0f0f0;padding-bottom:6px;margin-bottom:6px;">
+      <span style="color:#555;">Description</span><span style="font-weight:700;">S00186</span>
+    </div>
+    <div style="display:flex;justify-content:space-between;font-size:0.78rem;border-bottom:1px solid #f0f0f0;padding-bottom:6px;margin-bottom:6px;">
+      <span style="color:#555;">Date/Time</span><span style="font-weight:700;">06/06/2026 18:56</span>
+    </div>
+    <div style="display:flex;justify-content:space-between;font-size:0.78rem;border-bottom:1px solid #f0f0f0;padding-bottom:6px;margin-bottom:6px;">
+      <span style="color:#555;">Payment Type</span><span style="font-weight:700;">KNET</span>
+    </div>
+    <div style="display:flex;justify-content:space-between;font-size:0.78rem;border-bottom:1px solid #f0f0f0;padding-bottom:6px;margin-bottom:6px;">
+      <span style="color:#555;">Track ID</span><span style="font-weight:600;font-size:0.72rem;">27906062697712834</span>
+    </div>
+    <div style="display:flex;justify-content:space-between;font-size:0.78rem;border-bottom:1px solid #f0f0f0;padding-bottom:6px;margin-bottom:6px;">
+      <span style="color:#555;">Reference ID</span><span style="font-weight:600;font-size:0.72rem;">615756027445</span>
+    </div>
+    <div style="display:flex;justify-content:space-between;font-size:0.78rem;margin-bottom:14px;">
+      <span style="color:#555;">Transaction ID</span><span style="font-weight:600;font-size:0.72rem;">615756011535396</span>
+    </div>
+    <div style="background:#f0fff4;border-radius:8px;padding:8px 14px;font-size:0.82rem;color:#1e5c38;direction:rtl;font-weight:600;">✅ استكمال الكاونتر 240 د.ك + طاولة زبائن 40 د.ك</div>
   </div>
 </div>
 
@@ -1880,7 +1913,8 @@
     { date: 'مايو 2026',    label: 'تأسيس الصحي والسباكة', note: 'تأسيس سباكة · مقاول محمود',   status: 'مدفوع', amount: 80,   paid: 80,   remaining: 0,   isDeposit: false, receipt: 'wamd-250', receipt2: 'wamd-30'  },
     { date: 'مايو 2026',    label: 'تركيب السيراميك',       note: 'مقاول محمود · إجمالي 350 د.ك', status: 'مدفوع', amount: 350,  paid: 350,  remaining: 0,   isDeposit: false, receipt: 'wamd-ceramic-100', receipt2: 'wamd-ceramic-250' },
     { date: '17 مايو 2026', label: 'تكييف سبليت ديكسون',   note: '2 وحدة × 24000 BTU · يوريكا السالمية · فاتورة 30-100-2361673', status: 'مدفوع', amount: 339.800, paid: 339.800, remaining: 0, isDeposit: false, receipt: 'eureka-ac' },
-    { date: '18 مايو 2026', label: 'كاونتر (مقدم)',           note: 'Viola Alkuwaitia · إجمالي 340 د.ك · S00186', status: 'جزئي', amount: 340, paid: 100, remaining: 240, isDeposit: false, receipt: 'viola-counter' },
+    { date: '18 مايو 2026', label: 'كاونتر',                  note: 'Viola Alkuwaitia · إجمالي 340 د.ك · S00186', status: 'مدفوع', amount: 340, paid: 340, remaining: 0, isDeposit: false, receipt: 'viola-counter', receipt2: 'viola-280' },
+    { date: '06 يونيو 2026', label: 'طاولة للزبائن',          note: 'Viola Alkuwaitia · S00186 · KNET', status: 'مدفوع', amount: 40, paid: 40, remaining: 0, isDeposit: false, receipt: 'viola-280' },
     { date: 'مايو 2026',    label: 'أعمال الديكور',           note: 'مقاول محمود · إجمالي 230 د.ك', status: 'مدفوع', amount: 230, paid: 230, remaining: 0, isDeposit: false, receipt: 'wamd-decor-130', receipt2: 'wamd-decor-100' },
     { date: '20 مايو 2026', label: 'بلاط متداخل',              note: 'ACICO Group · Center Laize · طلب 17907', status: 'مدفوع', amount: 45.300, paid: 45.300, remaining: 0, isDeposit: false, receipt: 'acico-tiles' },
     { date: '21 مايو 2026', label: 'أجور تركيب البلاط الخارجي', note: 'تركيب البلاط المتداخل الخارجي · مقاول محمود', status: 'مدفوع', amount: 60, paid: 60, remaining: 0, isDeposit: false, receipt: 'wamd-tile-60' },
